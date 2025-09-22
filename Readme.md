@@ -1,13 +1,14 @@
 # Personal Portfolio Website
 
 ## Description
-A simple personal portfolio website to showcase my bio, skills, and goals as an aspiring web developer.  
+A simple personal portfolio website to showcase my bio, skills, goals and projects as an aspiring fullstack developer.  
 Built with HTML and CSS as part of my learning journey.
 
 ## Features
 - ✔️ Homepage with introduction
 - ✔️ Navigation bar
 - ✔️ About, Skills, and Contact sections
+- ✔️ Projects page 
 
 ## How to View
 Live: [https://Sofiyyah21.github.io/revised-portfolio/](https://Sofiyyah21.github.io/revised-portfolio/)
