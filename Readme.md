@@ -11,7 +11,7 @@ Built with HTML and CSS as part of my learning journey.
 - ✔️ Projects page 
 
 ## How to View
-Live: [https://Sofiyyah21.github.io/revised-portfolio/](https://Sofiyyah21.github.io/revised-portfolio/)
+Live: [https://Sofiyyah21.github.io/portfolio/](https://Sofiyyah21.github.io/portfolio/)
 
 ## Skills Learned
 - Structuring a webpage with HTML
