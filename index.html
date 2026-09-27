@@ -3,68 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <meta name="description" content="Portfolio of Abubakr Sofiyyah Simisola, an engineering student and developer building web applications, backend APIs, and database-driven systems.">
+  <meta property="og:title" content="Abubakr Sofiyyah Simisola | Portfolio">
+  <meta property="og:description" content="A simple portfolio showing Sofiyyah's growth from HTML and CSS projects into backend APIs and full-stack systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="IMAGES/IMG.jpeg">
+  <meta property="og:url" content="https://sofiyyah21.github.io/portfolio/">
+  <title>Abubakr Sofiyyah Simisola | Portfolio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>MY PORTFOLIO</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="projects.html">PROJECTS</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="index.html">MY PORTFOLIO</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" class="active" aria-current="page">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <img src="IMAGES/IMG.jpeg" alt="Abubakr Sofiyyah Simisola Photo">
-    <h1>Hi, I'm Abubakr Sofiyyah Simisola</h1>
-    <h2>Engineering Student & Aspiring Web Developer</h2>
-    <p>Combining technical engineering knowledge with growing web development skills to build innovative digital solutions.</p>
-  </section>
+  <main>
+    <section class="hero" aria-labelledby="intro-heading">
+      <div class="hero-photo">
+        <img src="IMAGES/IMG.jpeg" alt="Abubakr Sofiyyah Simisola">
+      </div>
+      <div class="hero-copy">
+        <p class="eyebrow">Engineering student and web developer</p>
+        <h1 id="intro-heading">Hi, I'm Abubakr Sofiyyah Simisola.</h1>
+        <p class="lead">
+          I build web applications and backend systems, with a growing focus on
+          TypeScript, Node.js, APIs, databases, and practical full-stack architecture.
+        </p>
+        <nav class="hero-actions" aria-label="Primary links">
+          <a class="button primary" href="projects.html">View my work</a>
+          <a class="button secondary" href="mailto:abubakrsofiyyah@gmail.com">Contact me</a>
+      </nav>
+        <nav class="social-links" aria-label="Profile links">
+          <a href="https://github.com/Sofiyyah21" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:abubakrsofiyyah@gmail.com">Email</a>
+    </nav>
+      </div>
+    </section>
 
-  <!-- About -->
-  <section class="about-section">
-    <h3>Engineering Meets Development</h3>
-    <p>As an Electrical and Electronics Engineering student at Olabisi Onobanjo University, I'm developing strong problem-solving skills and technical knowledge. Simultaneously, I'm cultivating web development expertise through self-study.</p>
-  </section>
+    <section class="about-section section-card" id="about" aria-labelledby="about-heading">
+      <p class="section-label">About</p>
+      <h2 id="about-heading">Engineering meets development</h2>
+      <p>
+        I started with simple HTML and CSS pages, then moved into JavaScript and more
+        structured web projects. My recent work is focused on backend APIs, authentication,
+        databases, and full-stack systems that need more than a nice interface.
+      </p>
+      <p>
+        I am still learning, but the work has grown from basic pages into systems with
+        roles, data models, validation, testing, and documentation. That progression is
+        what I want this portfolio to show.
+      </p>
+    </section>
 
-  <!-- Skills -->
-  <section class="skills">
-    <h3>My Current Toolkit</h3>
-    <ul>
-      <li>✔️ Frontend: HTML5, CSS3, JavaScript (Learning)</li>
-      <li>✔️ Engineering: Currently 300lvl in Electrical and Electronic Engineering</li>
-      <li>✔️ Soft Skills: Problem-solving, analytical thinking, teamwork</li>
-    </ul>
-  </section>
+    <section class="skills section-card" id="skills" aria-labelledby="skills-heading">
+      <p class="section-label">Skills</p>
+      <h2 id="skills-heading">My current toolkit</h2>
+      <div class="skill-groups">
+        <article>
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>REST APIs</li>
+            <li>JWT authentication</li>
+            <li>Role-based access</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Database and tooling</h3>
+          <ul>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>Mongoose</li>
+            <li>Prisma</li>
+            <li>Git and GitHub</li>
+          </ul>
+        </article>
+        <article>
+          <h3>Engineering practice</h3>
+          <ul>
+            <li>API validation</li>
+            <li>Testing with Vitest</li>
+            <li>SuperTest</li>
+            <li>Swagger / OpenAPI docs</li>
+            <li>Python and basic ML</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-  <!-- Journey -->
-  <section class="learning">
-    <h3>My Development Journey</h3>
-    <p>I started learning web development 3 months ago because I wanted to combine my engineering mindset with digital creation. Currently focusing on mastering HTML, CSS, and JavaScript basics.</p>
-    <p>What excites me most about development is the endless possibility to create and solve real-world problems.</p>
-  </section>
+    <section class="learning section-card" aria-labelledby="journey-heading">
+      <p class="section-label">Journey</p>
+      <h2 id="journey-heading">What I have been building toward</h2>
+      <div class="journey-list">
+        <article>
+          <span>01</span>
+          <h3>Frontend foundations</h3>
+          <p>Static pages, forms, landing pages, and small JavaScript projects helped me understand structure and styling.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Backend APIs</h3>
+          <p>I moved into Express and MongoDB projects with routes, controllers, models, authentication, and protected endpoints.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Full-stack systems</h3>
+          <p>My newer work uses TypeScript, React, PostgreSQL, Prisma, testing, and more deliberate application architecture.</p>
+        </article>
+      </div>
+    </section>
 
-  <!-- Beyond Code -->
-  <section class="personal">
-    <h3>Beyond Code</h3>
-    <p>When I'm not studying or coding, you'll find me reading (novels, educational books, or religious books).</p>
-  </section>
+    <section class="featured-work section-card" aria-labelledby="featured-heading">
+      <p class="section-label">Selected work</p>
+      <h2 id="featured-heading">A few projects that show the progression</h2>
+      <div class="featured-grid">
+        <article class="mini-project">
+          <h3>Monumental</h3>
+          <p>A full-stack shop management system with users, products, orders, sales, inventory movement, reporting, and API tests.</p>
+          <a href="https://github.com/Sofiyyah21/monumental" target="_blank" rel="noopener">View repository</a>
+        </article>
+        <article class="mini-project">
+          <h3>Digital Banking System</h3>
+          <p>A TypeScript backend for customer onboarding, accounts, transfers, transaction history, and JWT-secured access.</p>
+          <a href="https://github.com/Sofiyyah21/digital-bsnking-system" target="_blank" rel="noopener">View repository</a>
+        </article>
+      </div>
+      <a class="text-link" href="projects.html">See all selected projects</a>
+    </section>
 
-  <!-- Call to Action -->
-  <div class="cta">
-    <p>I'm eager to collaborate on small projects while I learn. <a href="mailto:abubakrsofiyyah@gmail.com">Let's connect</a>!</p>
-  </div>
+    <section class="personal section-card">
+      <p class="section-label">Beyond code</p>
+      <h2>Still curious, still learning</h2>
+      <p>
+        When I am not studying or coding, I am usually reading novels, educational books,
+        or religious books. I still value the beginner's mindset from my first portfolio:
+        stay curious, practice often, and keep improving.
+      </p>
+    </section>
 
-  <p class="mindset">Every day I'm expanding my skills through watching online videos and practising what I learn. I embrace the beginner's mindset – curious, eager, and constantly improving.</p>
+    <section class="cta" id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Let's connect</h2>
+      <p>I am open to learning-focused collaborations, backend/API projects, and opportunities to keep growing through real work.</p>
+      <div class="hero-actions">
+        <a class="button primary" href="mailto:abubakrsofiyyah@gmail.com">Email me</a>
+        <a class="button secondary" href="https://github.com/Sofiyyah21" target="_blank" rel="noopener">GitHub profile</a>
+      </div>
+    </section>
+  </main>
 
-  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 ABUBAKR SOFIYYAH SIMISOLA. All rights reserved.</p>
+    <p>&copy; 2026 ABUBAKR SOFIYYAH SIMISOLA. All rights reserved.</p>
   </footer>
 </body>
 </html>

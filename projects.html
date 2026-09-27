@@ -3,56 +3,294 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
+  <meta name="description" content="Selected projects by Abubakr Sofiyyah Simisola, from early HTML and CSS work to backend APIs and full-stack systems.">
+  <meta property="og:title" content="Projects | Abubakr Sofiyyah Simisola">
+  <meta property="og:description" content="A curated project page showing Sofiyyah's growth from frontend fundamentals into backend and full-stack development.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="IMAGES/IMG.jpeg">
+  <meta property="og:url" content="https://sofiyyah21.github.io/portfolio/projects.html">
+  <title>Projects | Abubakr Sofiyyah Simisola</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>MY PORTFOLIO</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="projects.html" class="active">PROJECTS</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="index.html">MY PORTFOLIO</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="index.html#about">ABOUT</a></li>
+          <li><a href="index.html#skills">SKILLS</a></li>
+          <li><a href="projects.html" class="active" aria-current="page">PROJECTS</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <!-- Projects -->
   <main>
-    <section class="project login">
-      <h3>Login and Signup Website</h3>
+    <section class="page-intro" aria-labelledby="projects-heading">
+      <p class="eyebrow">Selected projects</p>
+      <h1 id="projects-heading">From simple pages to systems with real backend structure.</h1>
       <p>
-        This project features a login and signup form built using HTML and CSS only.  
-        The login page uses emoji-based labels for a unique touch, while the signup page includes multiple input types.
+        I am not listing every repository here. These projects were chosen because they
+        show the clearest growth in technical depth, architecture, and problem solving.
       </p>
-      <img src="IMAGES/login.png" alt="Screenshot of login page design">
-      <img src="IMAGES/signup.png" alt="Screenshot of signup page design">
-      <p><a href="https://sofiyyah21.github.io/form/" target="_blank">Visit Form Page</a></p>
     </section>
 
-    <section class="project calculator">
-      <h3>Calculator</h3>
-      <p>
-        This is a simple web-based calculator built with HTML, CSS, and JavaScript.
-        It allows you to add, subtract, multiply, and divide two numbers.
-      </p>
-      <img src="IMAGES/cal.png" alt="Screenshot of calculator project">
-      <p><a href="https://sofiyyah21.github.io/basic-calculator/" target="_blank">Visit Calculator Page</a></p>
+    <section class="project-section" aria-labelledby="featured-projects-heading">
+      <div class="section-heading">
+        <p class="section-label">Where I am now</p>
+        <h2 id="featured-projects-heading">Featured projects</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project featured">
+          <div class="project-header">
+            <p class="project-type">Full-stack system</p>
+            <h3>Monumental</h3>
+          </div>
+          <p>
+            A shop management system with a TypeScript/Express API, React frontend,
+            PostgreSQL database, and Prisma data models for users, products, orders,
+            sales, stock movement, and shop settings.
+          </p>
+          <p class="project-note">
+            Demonstrates role-based data modeling, JWT sessions, validation, Swagger
+            documentation, integration and E2E testing with Vitest and SuperTest, and
+            production-minded API configuration.
+          </p>
+          <ul class="tags" aria-label="Technologies used">
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>PostgreSQL</li>
+            <li>Prisma</li>
+            <li>Vitest</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Sofiyyah21/monumental" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project featured">
+          <div class="project-header">
+            <p class="project-type">Backend API</p>
+            <h3>Digital Banking System</h3>
+          </div>
+          <p>
+            A backend banking API for customer onboarding, account creation, funding,
+            transfers, balance checks, transaction history, and transaction status checks.
+          </p>
+          <p class="project-note">
+            Demonstrates TypeScript backend development, MongoDB/Mongoose data handling,
+            JWT authentication, secure customer data access, and external banking API
+            integration described in the repository.
+          </p>
+          <ul class="tags" aria-label="Technologies used">
+            <li>TypeScript</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>Mongoose</li>
+            <li>JWT</li>
+            <li>Zod</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Sofiyyah21/digital-bsnking-system" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project featured">
+          <div class="project-header">
+            <p class="project-type">Backend API</p>
+            <h3>Course Management API</h3>
+          </div>
+          <p>
+            A REST API for managing online courses, users, course creation, student
+            enrollment, protected routes, and course image uploads.
+          </p>
+          <p class="project-note">
+            Demonstrates Express API organization, MongoDB, JWT authentication,
+            role-based access for admin, instructor, and student flows, plus file upload
+            handling with Multer.
+          </p>
+          <ul class="tags" aria-label="Technologies used">
+            <li>JavaScript</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>Mongoose</li>
+            <li>JWT</li>
+            <li>Multer</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Sofiyyah21/course-management-api" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project featured">
+          <div class="project-header">
+            <p class="project-type">Academic / ML project</p>
+            <h3>Solar Panel Power Prediction</h3>
+          </div>
+          <p>
+            A Streamlit app that predicts solar power generation from weather inputs
+            such as temperature, humidity, wind speed, and solar irradiance.
+          </p>
+          <p class="project-note">
+            Demonstrates Python, pandas, scikit-learn, a Random Forest regression model,
+            model saving with joblib, and a simple interface for testing predictions.
+          </p>
+          <ul class="tags" aria-label="Technologies used">
+            <li>Python</li>
+            <li>Streamlit</li>
+            <li>pandas</li>
+            <li>scikit-learn</li>
+            <li>joblib</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Sofiyyah21/AI_Solar_Panel_Prediction_Power_GET307_project" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section class="project brand-landing-page">
-      <h3>Brand Landing Page</h3>
-      <p>
-        This is a simple static landing page project designed and coded to practice basic HTML and CSS page structure and styling.
-      </p>
-      <video src="IMAGES/Screen Recording 2025-08-31 at 3.21.34 PM.mov" controls></video>
-      <p><a href="https://sofiyyah21.github.io/Landing-page/" target="_blank">Visit Brand-Landing Page</a></p>
+    <section class="project-section" aria-labelledby="supporting-projects-heading">
+      <div class="section-heading">
+        <p class="section-label">More backend practice</p>
+        <h2 id="supporting-projects-heading">Supporting projects</h2>
+      </div>
+
+      <div class="project-grid compact">
+        <article class="project">
+          <h3>Library System API</h3>
+          <p>
+            A school library management API using Express, MongoDB, Mongoose, JWT,
+            validation middleware, and Swagger-related tooling.
+          </p>
+          <ul class="tags" aria-label="Technologies used">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>JWT</li>
+            <li>Swagger</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Sofiyyah21/library-system" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Staff Time and Attendance System</h3>
+          <p>
+            A collaborative Techsphere Academy backend capstone covering authentication,
+            users, attendance, leave requests, admin-only routes, and MongoDB models.
+          </p>
+          <ul class="tags" aria-label="Technologies used">
+            <li>Group capstone</li>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>JWT</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Sofiyyah21/Staff-Time-Attendance-System-Capstone-Project-" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Contact Form</h3>
+          <p>
+            A newer frontend form project with real-time validation, error handling,
+            responsive layout, and custom styling.
+          </p>
+          <ul class="tags" aria-label="Technologies used">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Validation</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Sofiyyah21/cantact-form" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-section early-work" aria-labelledby="early-projects-heading">
+      <div class="section-heading">
+        <p class="section-label">Where I started</p>
+        <h2 id="early-projects-heading">Early frontend projects</h2>
+      </div>
+
+      <div class="project-grid compact">
+        <article class="project">
+          <h3>Login and Signup Website</h3>
+          <p>
+            One of my early HTML and CSS projects: login and signup screens with simple
+            form layouts and visual styling practice.
+          </p>
+          <div class="project-media two-images" role="group" aria-label="Screenshots of the login and signup project">
+            <img src="IMAGES/login.png" alt="Screenshot of the login page project">
+            <img src="IMAGES/signup.png" alt="Screenshot of the signup page project">
+          </div>
+          <ul class="tags" aria-label="Technologies used">
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Sofiyyah21/form" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://sofiyyah21.github.io/form/" target="_blank" rel="noopener">Live page</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Basic Calculator</h3>
+          <p>
+            A small JavaScript calculator that helped me practice inputs, operations,
+            DOM interaction, and basic page behavior.
+          </p>
+          <div class="project-media">
+            <img src="IMAGES/cal.png" alt="Screenshot of the basic calculator project">
+          </div>
+          <ul class="tags" aria-label="Technologies used">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Sofiyyah21/basic-calculator" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://sofiyyah21.github.io/basic-calculator/" target="_blank" rel="noopener">Live page</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Brand Landing Page</h3>
+          <p>
+            A static landing page project from my frontend foundation stage, focused on
+            page structure, styling, and layout practice.
+          </p>
+          <div class="project-media">
+            <video src="IMAGES/Screen Recording 2025-08-31 at 3.21.34 PM.mov" controls aria-label="Screen recording of the landing page project"></video>
+          </div>
+          <ul class="tags" aria-label="Technologies used">
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://github.com/Sofiyyah21/Landing-page" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://sofiyyah21.github.io/Landing-page/" target="_blank" rel="noopener">Live page</a>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
-  <!-- Footer -->
+
   <footer>
-    <p>&copy; 2025 ABUBAKR SOFIYYAH SIMISOLA. All rights reserved.</p>
+    <p>&copy; 2026 ABUBAKR SOFIYYAH SIMISOLA. All rights reserved.</p>
   </footer>
 </body>
 </html>
